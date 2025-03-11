@@ -23,6 +23,7 @@ int main()
         printf("Error");
     }
     
-    printf("%lld", a);
+    printf("Uoc chung lon nhat cua %lld va %lld la %d\n", a, b, ucln(a, b));
+    printf("Boi chung nho nhat cua %lld va %lld la %d", a, b, a*b / ucln(a, b));
     return 0;
 }

@@ -8,7 +8,7 @@ int main()
     scanf("%lld", &num);
     if (num <= 0)
     {
-        printf("Error");
+        printf("%lld khong phai so hoan hao", num);
     }
     else
     {

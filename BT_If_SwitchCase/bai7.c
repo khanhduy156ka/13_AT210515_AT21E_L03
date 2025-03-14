@@ -30,7 +30,7 @@ int main()
     }
     else
     {
-        printf("Error");
+        printf("Diem ban vua nhap khong hop le");
     }
     return 0;
 }

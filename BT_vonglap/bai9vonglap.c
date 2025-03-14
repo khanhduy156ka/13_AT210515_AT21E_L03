@@ -17,7 +17,7 @@ int main()
     scanf("%d", &n);
     if (n < 0)
     {
-        printf("Error");
+        printf("n phai lon hon hoac bang 0");
     }
     else if (n == 0)
     {

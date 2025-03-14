@@ -6,6 +6,7 @@ int main()
     int num;
     printf("Nhap so: ");
     scanf("%lld", &num);
+    printf("Cac uoc cua %d la: \n", num);
     for (int i = 1; i <= sqrt(num); i++)
     {
         if (num % i == 0)

@@ -6,7 +6,7 @@ int main()
     long long num;
     printf("Nhap so: ");
     scanf("%lld", &num);
-    if (num <= 0)
+    if (num <= 5)
     {
         printf("%lld khong phai so hoan hao", num);
     }

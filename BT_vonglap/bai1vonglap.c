@@ -10,6 +10,6 @@ int main()
         scanf("%lld", &num);
         sum += num;
     }
-    printf("Tong la: %lld", sum);
+    printf("Tong cac so vua nhap la: %lld", sum);
     return 0;
 }

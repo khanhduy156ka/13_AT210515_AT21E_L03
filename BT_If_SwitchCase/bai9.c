@@ -23,7 +23,7 @@ int main(){
             }
         }
     else {
-        printf("Error");
+        printf("Input khong hop le");
     }
     return 0;
 }

@@ -17,7 +17,7 @@ int main()
     }
     else
     {
-        printf("Error");
+        printf("N phai lon hon 0");
     }
     return 0;
 }

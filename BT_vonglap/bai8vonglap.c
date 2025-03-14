@@ -8,7 +8,7 @@ int main()
     scanf("%d", &n);
     if (n < 0)
     {
-        printf("Error");
+        printf("So am khong tinh duoc giai thua");
     }
     else if (n == 0)
     {

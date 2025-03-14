@@ -4,7 +4,7 @@
 int main()
 {
     double a, b, c, denta;
-    printf("Nhap cac he so a, b, c: ");
+    printf("Nhap cac he so a, b, c cua pt bac 2: ");
     scanf("%lf%lf%lf", &a, &b, &c);
     if (a == 0) {
         if(b == 0) {

@@ -15,7 +15,7 @@ int main(){
                         printf("Hôm nay là ngày %02d/%02d/%d",d,m,y);
                     }
                     else{
-                        printf("Error");
+                        printf("Input khong hop le");
                     }
                     break;
                 case 4: case 6: case 9: case 11:
@@ -23,7 +23,7 @@ int main(){
                         printf("Hôm nay là ngày %02d/%02d/%d",d,m,y);
                     }
                     else{
-                        printf("Error");
+                        printf("Input khong hop le");
                     }
                     break;
                 default:
@@ -32,7 +32,7 @@ int main(){
         }
     }
     else {
-        printf("Error");
+        printf("Input khong hop le");
     }
     return 0;
 }

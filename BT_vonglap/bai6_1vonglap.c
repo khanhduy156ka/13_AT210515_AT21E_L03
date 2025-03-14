@@ -20,7 +20,7 @@ int main()
     b = abs(b);
     if (a == 0 || b == 0)
     {
-        printf("Error");
+        printf("2 so nguyen phai khac 0");
     }
     
     printf("Uoc chung lon nhat cua %lld va %lld la %d\n", a, b, ucln(a, b));

@@ -4,7 +4,7 @@
 int main()
 {
     int n;
-    float rate = 0.45 / 100;
+    double rate = 0.45 / 100;
     double money;
     printf("Nguoi anh em gui vao bank bao tien va gui may thang: ");
     scanf("%lf %d", &money, &n);

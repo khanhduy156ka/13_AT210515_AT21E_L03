@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-double ham_mu(int x, int y)
+double ham_mu(float x, int y)
 {
     double tich = 1;
     if (y == 0)
@@ -26,9 +26,24 @@ double ham_mu(int x, int y)
 }
 int main()
 {
-    int x, y;
+    int y;
+    float x;
     printf("Nhap x va y: ");
-    scanf("%d %d", &x, &y);
-    printf("%d mu %d bang: %g", x, y, ham_mu(x, y));
+    scanf("%f %d", &x, &y);
+    if (x == 0)
+    {
+        if (y <= 0)
+        {
+            printf("Loi phep tinh");
+        }
+        else
+        {
+            printf("%g mu %d bang: 0", x, y);
+        }
+    }
+    else
+    {
+        printf("%g mu %d bang: %g", x, y, ham_mu(x, y));
+    }
     return 0;
 }

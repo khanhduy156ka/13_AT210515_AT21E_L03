@@ -53,28 +53,28 @@ void nhan_mt (int a, int b, int c, int d, float mt1[a][b], float mt2[c][d], floa
 int main()
 {
     int a, b, c, d;
-    printf("Nhap kich thuoc ma tran 1 (m1 n1): ");
+    printf("Nhap kich thuoc ma tran A (m1 n1): ");
     scanf("%d %d", &a, &b);
-    printf("Nhap kich thuoc ma tran 2 (m2 n2): ");
+    printf("Nhap kich thuoc ma tran B (m2 n2): ");
     scanf("%d %d", &c, &d);
-    if (((a != c) || (b != d)) && (b != c))
+    if (((a != c) || (b != d)) && (b != c && a != d))
     {
         printf("Khong cong duoc 2 ma tran khong cung kich thuoc\n");
-        printf("Khong nhan duoc 2 ma tran voi nhau vi n1 khac m2");
+        printf("Khong nhan duoc 2 ma tran voi nhau");
     }
     else
     {
         float mt1[a][b];
         float mt2[c][d];
-        printf("Nhap ma tran 1: \n");
+        printf("Nhap ma tran A: \n");
         tao_mt(a, b, mt1);
-        printf("Nhap ma tran 2: \n");
+        printf("Nhap ma tran B: \n");
         tao_mt(c, d, mt2);
         printf("\n");
-        printf("Ma tran 1: \n");
+        printf("Ma tran A: \n");
         in_mt(a, b, mt1);
         printf("\n");
-        printf("Ma tran 2: \n");
+        printf("Ma tran B: \n");
         in_mt(c, d, mt2);
         printf("\n");
         if((a == c) && (b == d))
@@ -88,16 +88,28 @@ int main()
         {
             printf("Khong cong duoc 2 ma tran khong cung kich thuoc\n");
         }
+        printf("Luu y: Khi nhan 2 ma tran, A x B != B x A\n");
         if (b == c)
         {
             float mt[a][d];
+            printf("Nhan ma tran A voi ma tran B ta duoc ma tran: \n");
             nhan_mt(a, b, c, d, mt1, mt2, mt);
-            printf("Nhan 2 ma tran voi nhau, ta duoc ma tran: \n");
             in_mt(a, d, mt);
         }
         else
         {
-            printf("Khong nhan duoc 2 ma tran voi nhau vi n1 khac m2");
+            printf("Khong nhan duoc ma tran A voi ma tran B");
+        }
+        if (d == a)
+        {
+            float mt[c][b];
+            printf("Nhan ma tran B voi ma tran A ta duoc ma tran: \n");
+            nhan_mt(c, d, a, b, mt2, mt1, mt);
+            in_mt(c, b, mt);
+        }
+        else
+        {
+            printf("Khong nhan duoc ma tran B voi ma tran A");
         }
     }
     return 0;

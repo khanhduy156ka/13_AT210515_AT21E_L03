@@ -6,7 +6,7 @@ void in_mt(int m, int n, int mt[m][n])
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%d ", mt[i][j]);
+            printf("%4d ", mt[i][j]);
         }
         printf("\n");
     }
@@ -62,18 +62,15 @@ int main()
     {
         int ap = (n - 1) / 2;
         int bp = ap;
-        printf("%d %d", ap, bp);
-        printf("\n");
         mt[ap][bp] = n*n;
     }
     else
     {
         int ap = n / 2;
         int bp = ap - 1;
-        printf("%d %d", ap, bp);
-        printf("\n");
     }
     xoay(n, mt, ap, bp);
+    printf("Ma tran xoay kich thuoc %d x %d: \n", n, n);
     in_mt(n, n, mt);
     return 0;
 }
